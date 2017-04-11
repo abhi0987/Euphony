@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/img_lay"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:scaleType="centerCrop"
+            android:padding="35dp"
+
+            android:layout_centerVertical="true"
+            android:src="@drawable/euphony_phn"/>
+
+        <ImageView
+            android:elevation="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/song_art_notif"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/img_lay"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notif_song_nm"
+                    android:lines="1"
+                    android:text="Song nmae"
+                    android:textSize="14dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#fff"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/notif_artist_nm"
+                    android:lines="1"
+                    android:textSize="11dp"
+                    android:text="artist name"
+                    android:layout_below="@id/notif_song_nm"
+                    android:layout_alignLeft="@+id/notif_song_nm"
+                    android:textColor="#cccccc"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#7f7f7f"
+                    android:layout_alignParentBottom="true"></LinearLayout>
+
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="60dp"
+                        android:id="@+id/notif_prev_btn"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/prev_bttn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_skip_previous_white_48dp"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_width="60dp"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/notif_play_btn"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/pause_bttn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/pause_button"
+                            android:layout_centerInParent="true"/>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <RelativeLayout
+                        android:layout_centerInParent="true"
+                        android:layout_width="60dp"
+                        android:id="@+id/notif_next_btn"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:id="@+id/next_bttn"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/ic_skip_next_white_48dp"
+                            android:layout_centerInParent="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

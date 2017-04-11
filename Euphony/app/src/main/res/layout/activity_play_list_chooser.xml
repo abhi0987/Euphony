@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="music.abitri.com.euphony.PlayListChooserActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+           >
+
+
+            <RelativeLayout
+
+                android:elevation="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:layout_centerInParent="true"
+                >
+
+
+                <RelativeLayout
+                    android:id="@+id/playlist_hdr"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <music.abitri.com.euphony.CustomText.myTextcustomView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Add to playlist"
+                        android:textColor="@color/orange" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="#b2b2b2"></LinearLayout>
+                </RelativeLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@+id/playlist_hdr"
+                    android:id="@+id/new_playlist_view">
+
+                    <music.abitri.com.euphony.CustomText.customTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_gravity="center"
+                        android:fontFamily="serif-monospace"
+                        android:text="Create new Playlist"
+                        android:textColor="@color/colorPrimary"/>
+
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:id="@+id/avlble_playlist"
+                    android:layout_height="match_parent"
+                    android:clipToPadding="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/new_playlist_view">
+                </android.support.v7.widget.RecyclerView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

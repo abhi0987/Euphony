@@ -1,0 +1,75 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/conater"
+    android:background="@color/colorPrimary"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="music.abitri.com.euphony.FragmentPkg.LibraryFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        app:tabBackground="@drawable/tab_selcted_background"
+        app:tabSelectedTextColor="#fff"
+        app:tabTextColor="#fff"
+        app:tabGravity="fill"
+        app:tabMode="scrollable"
+        app:tabIndicatorHeight="0dp"
+        app:tabMaxWidth="200dp"
+        app:tabMinWidth="100dp"
+        app:tabIndicatorColor="@color/dark_primary"
+        ></android.support.design.widget.TabLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:background="@color/green"
+        android:id="@+id/add_to_list_lay">
+
+        <music.abitri.com.euphony.CustomText.customTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:text="Create a new list"/>
+    </RelativeLayout>
+
+    <music.abitri.com.euphony.CustomText.customTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#7f7f7f"
+        android:visibility="gone"
+        android:id="@+id/textWarn"
+        android:text="Oops ! no favorites found"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/add_to_list_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/combined_view"
+        android:clipToPadding="true"
+        android:fadeScrollbars="true"
+        android:splitMotionEvents="true"
+        android:visibility="visible"
+        android:scrollIndicators="top"></android.support.v7.widget.RecyclerView>
+
+    <music.abitri.com.euphony.Manager.CustomViewPager
+        android:layout_below="@+id/tab_layout"
+        android:id="@+id/viewPager"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        ></music.abitri.com.euphony.Manager.CustomViewPager>
+
+</RelativeLayout>

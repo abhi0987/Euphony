@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_play"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="music.abitri.com.euphony.PlayActivity">
+
+
+        <LinearLayout
+            android:id="@+id/top_lay"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:elevation="10dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/back_btn"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="?selectableItemBackgroundBorderless">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_keyboard_arrow_left_black_48dp" />
+                </RelativeLayout>
+
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/setting"
+                    android:background="@drawable/fav_click">
+                    <ImageView
+                        android:layout_width="21dp"
+                        android:layout_height="21dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/more_dots" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:id="@+id/top_half"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#fff">
+
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never"></android.support.v4.view.ViewPager>
+
+
+                <RelativeLayout
+                    android:id="@+id/circ_lay"
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp">
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/seek_lay"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/circ_lay">
+
+                    <app.minimize.com.seek_bar_compat.SeekBarCompat
+                        android:id="@+id/seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        app:progressBackgroundColor="#e19077"
+                        app:progressColor="@color/orange"
+                        app:thumbAlpha="1.0"
+                        app:thumbColor="@color/orange" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/seek_lay"
+                    android:layout_marginTop="10dp">
+
+                    <music.abitri.com.euphony.CustomText.customTextView
+                        android:id="@+id/startTm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary" />
+
+                    <music.abitri.com.euphony.CustomText.customTextView
+                        android:id="@+id/endTm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text=""
+                        android:textColor="@color/colorPrimary" />
+
+                    <RelativeLayout
+                        android:id="@+id/fav_view"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="?selectableItemBackgroundBorderless">
+
+                        <ImageView
+                            android:id="@+id/fav_ic"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_favorite_border_red_300_48dp" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:elevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <music.abitri.com.euphony.CustomText.QuicksandTexview
+                            android:id="@+id/tooltext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:elevation="10dp"
+                            android:ellipsize="middle"
+                            android:fadingEdge="horizontal"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:scrollHorizontally="true"
+                            android:text="Song name"
+                            android:textColor="#626863"
+                            android:textSize="17dp" />
+
+                        <music.abitri.com.euphony.CustomText.myTextcustomView
+                            android:id="@+id/artist_nm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tooltext"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:elevation="6dp"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:text="artist"
+                            android:textColor="#fff"
+                            android:textSize="13dp" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/skip_prev"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:background="?selectableItemBackgroundBorderless">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:id="@+id/rpt_ic"
+                                    android:layout_height="30dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ic_skip_previous_white_48dp" />
+                            </RelativeLayout>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <android.support.design.widget.FloatingActionButton
+                                android:id="@+id/play_btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                app:backgroundTint="@color/orange"
+                                app:elevation="10dp"
+                                app:fabSize="normal"
+                                app:srcCompat="@drawable/play_button" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/skip_next"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:background="?selectableItemBackgroundBorderless">
+
+                                <ImageView
+                                    android:layout_width="30dp"
+                                    android:layout_height="30dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/ic_skip_next_white_48dp" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/rpt_ic_lay"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:background="?selectableItemBackgroundBorderless">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/repeat_white" />
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+
+                                android:id="@+id/play_list_q"
+                                android:layout_width="50dp"
+                                android:layout_centerInParent="true"
+                                android:layout_height="50dp"
+                                android:background="@drawable/fav_click">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/playlist_q" />
+
+                            </RelativeLayout>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:id="@+id/shfl_ic_lay"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_centerInParent="true"
+                                android:background="?selectableItemBackgroundBorderless">
+
+                                <ImageView
+                                    android:id="@+id/sh_ic"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/shuffle_white" />
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <com.intrusoft.library.FrissonView
+
+                    android:id="@+id/frissonView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:rotation="0"
+                    app:scaleType="centerCrop"
+                    app:tideCount="3"
+                    app:tideHeight="60dp"
+                    app:tintColor="@color/green" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+

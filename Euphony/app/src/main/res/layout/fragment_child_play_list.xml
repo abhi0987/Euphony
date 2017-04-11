@@ -1,0 +1,50 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="music.abitri.com.euphony.SecondaryFragmentPkg.ChildSecFragPkg.ChildPlayListFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:elevation="1dp"
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        <music.abitri.com.euphony.CustomText.myTextcustomView
+            android:id="@+id/plst_hdr_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="22dp"
+            android:textColor="#fff" />
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/plst_cntr_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="52dp"
+        android:elevation="1dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <music.abitri.com.euphony.CustomText.customTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="#7f7f7f"
+        android:id="@+id/textWarn"
+        android:text="Oops ! No tracks found"
+        />
+
+
+</RelativeLayout>

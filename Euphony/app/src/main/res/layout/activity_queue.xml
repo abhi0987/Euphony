@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="music.abitri.com.euphony.QueueActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="70dp"
+                android:src="@drawable/ic_library_music_grey_300_48dp" />
+
+            <ImageView
+                android:id="@+id/que_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="4dp"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/que_grad"
+                android:elevation="6dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp">
+
+                    <com.github.ybq.android.spinkit.SpinKitView
+                        android:id="@+id/spin_kit"
+                        style="@style/SpinKitView.Wave"
+                        android:layout_width="28dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        app:SpinKit_Color="@color/orange" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/q_play"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/fav_click">
+
+                        <ImageView
+                            android:id="@+id/q_pl_ps"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/pause_button" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_alignParentBottom="true">
+
+                    <music.abitri.com.euphony.CustomText.QuicksandTexview
+                        android:id="@+id/q_song_nm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:singleLine="true"
+                        android:text="Song Name"
+                        android:textColor="#fff"
+                        android:textSize="19dp" />
+
+                    <music.abitri.com.euphony.CustomText.myTextcustomView
+                        android:id="@+id/q_artist_nm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/q_song_nm"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="6dp"
+                        android:singleLine="true"
+                        android:text="artist"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15dp" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/que_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/app_bar"
+            android:layout_marginTop="5dp"></android.support.v7.widget.RecyclerView>
+
+    </RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

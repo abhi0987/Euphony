@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/add_to_plst_id"
+        android:title="Add to playlist"
+        />
+
+    <item
+        android:id="@+id/edit_id"
+        android:title="Edit info" />
+
+    <item
+        android:id="@+id/shr_id"
+        android:title="Share" />
+
+
+</menu>

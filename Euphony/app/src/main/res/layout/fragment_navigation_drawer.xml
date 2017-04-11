@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_navigation_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/back_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:background="@color/colorPrimary">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_alignParentTop="true">
+
+            <com.intrusoft.library.FrissonView
+                android:id="@+id/frission"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:alphaValue="56"
+                app:autoTint="true"
+                app:gradientAngle="100"
+                app:gradientType="linear"
+                app:scaleType="centerCrop"
+                app:tideCount="3"
+                app:tideHeight="60dp"
+                app:tintColor="#ffa500"></com.intrusoft.library.FrissonView>
+
+
+            <music.abitri.com.euphony.CustomText.custom_text_view
+                android:id="@+id/name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="80dp"
+                android:text="@string/app_name"
+                android:textColor="#fff"
+                android:textSize="30dp" />
+
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_marginTop="19dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:id="@+id/lay1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1">
+
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_library_music_white_36dp" />
+
+                    <music.abitri.com.euphony.CustomText.myTextcustomView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="36dp"
+                        android:layout_toRightOf="@+id/img1"
+                        android:text="My Library"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/lay1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_favorite_white_36dp" />
+
+                    <music.abitri.com.euphony.CustomText.myTextcustomView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="36dp"
+                        android:layout_toRightOf="@+id/img2"
+                        android:text="Favorite"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/lay2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img3"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_playlist_add_check_white_36dp" />
+
+                    <music.abitri.com.euphony.CustomText.myTextcustomView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="36dp"
+                        android:layout_toRightOf="@+id/img3"
+                        android:text="Playlist"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/lay4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/lay3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1">
+
+                    <ImageView
+                        android:id="@+id/img4"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_equalizer_white_36dp" />
+
+                    <music.abitri.com.euphony.CustomText.myTextcustomView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="36dp"
+                        android:layout_toRightOf="@+id/img4"
+                        android:text="Equilizer"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lay5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/lay4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp">
+
+                    <ImageView
+                        android:id="@+id/img5"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_rate_review_white_36dp" />
+
+                    <music.abitri.com.euphony.CustomText.myTextcustomView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="36dp"
+                        android:layout_toRightOf="@+id/img5"
+                        android:text="Rate this app"
+                        android:textColor="#fff"
+                        android:textSize="16dp" />
+
+
+                </RelativeLayout>
+
+
+                <!-- <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:id="@+id/lay5"
+                     android:background="#333333"
+                     android:layout_below="@+id/lay4S"
+                     android:layout_centerHorizontal="true">
+
+                     <ImageView
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:id="@+id/img_5"
+                         android:src="@drawable/heart"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="10dp"
+                         android:layout_alignParentLeft="true"
+                         />
+
+                     <pc.info.solution.washdude.UTILLS.customtext
+                         android:layout_width="wrap_content"
+                         android:textColor="#fff"
+                         android:text="RATE THIS APP"
+                         android:textSize="16dp"
+                         android:layout_marginLeft="36dp"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_toRightOf="@+id/img_5"
+                         />
+
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:id="@+id/lay6"
+                     android:background="#333333"
+                     android:layout_below="@+id/lay5"
+                     android:layout_centerHorizontal="true">
+
+                     <ImageView
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:id="@+id/img6"
+                         android:src="@drawable/share"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="10dp"
+                         android:layout_alignParentLeft="true"
+                         />
+
+                     <pc.info.solution.washdude.UTILLS.customtext
+                         android:layout_width="wrap_content"
+                         android:textColor="#fff"
+                         android:text="SHARE THIS APP"
+                         android:textSize="16dp"
+                         android:layout_marginLeft="36dp"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_toRightOf="@+id/img6"
+                         />
+
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:id="@+id/lay8"
+                     android:background="#333333"
+                     android:layout_below="@+id/lay6"
+                     android:layout_centerHorizontal="true">
+
+                     <ImageView
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:id="@+id/img0"
+                         android:src="@drawable/money"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="10dp"
+                         android:layout_alignParentLeft="true"
+                         />
+
+                     <pc.info.solution.washdude.UTILLS.customtext
+                         android:layout_width="wrap_content"
+                         android:textColor="#fff"
+                         android:text="REFER AND EARN"
+                         android:textSize="16dp"
+                         android:layout_marginLeft="36dp"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_toRightOf="@+id/img0"
+                         />
+
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:id="@+id/lay9"
+                     android:background="#333333"
+                     android:layout_below="@+id/lay8"
+                     android:layout_centerHorizontal="true">
+
+                     <ImageView
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:id="@+id/img01"
+                         android:src="@drawable/tnc"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="10dp"
+                         android:layout_alignParentLeft="true"
+                         />
+
+                     <pc.info.solution.washdude.UTILLS.customtext
+                         android:layout_width="wrap_content"
+                         android:textColor="#fff"
+                         android:text="TERMS &amp; CONDITION"
+                         android:textSize="16dp"
+                         android:layout_marginLeft="36dp"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_toRightOf="@+id/img01"
+                         />
+
+
+                 </RelativeLayout>
+                 <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:id="@+id/lay10"
+                     android:background="#333333"
+                     android:layout_below="@+id/lay9"
+                     android:layout_centerHorizontal="true">
+
+                     <ImageView
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:id="@+id/img02"
+                         android:src="@drawable/phone_book"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="10dp"
+                         android:layout_alignParentLeft="true"
+                         />
+
+                     <pc.info.solution.washdude.UTILLS.customtext
+                         android:layout_width="wrap_content"
+                         android:textColor="#fff"
+                         android:text="CONTACT US"
+                         android:textSize="16dp"
+                         android:layout_marginLeft="36dp"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_toRightOf="@+id/img02"
+                         />
+
+
+                 </RelativeLayout>-->
+
+                <!-- <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="50dp"
+                     android:id="@+id/lay7"
+                     android:background="#333333"
+                     android:layout_below="@+id/lay10"
+                     android:layout_centerHorizontal="true">
+
+                     <ImageView
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:id="@+id/img7"
+                         android:src="@drawable/power"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="10dp"
+                         android:layout_alignParentLeft="true"
+                         />
+
+                     <pc.info.solution.washdude.UTILLS.customtext
+                         android:layout_width="wrap_content"
+                         android:textColor="#fff"
+                         android:text="LOG OUT"
+                         android:textSize="16dp"
+                         android:layout_marginLeft="36dp"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_toRightOf="@+id/img7"
+                         />
+
+
+                 </RelativeLayout>-->
+                <!-- <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="70dp"
+                     android:layout_below="@+id/lay4"
+                     android:id="@+id/lay5"
+                     android:background="#333333"
+                     android:layout_centerHorizontal="true">
+
+                     <ImageView
+                         android:layout_width="30dp"
+                         android:layout_height="30dp"
+                         android:id="@+id/img3"
+                         android:src="@drawable/ic_card_giftcard_green_500_36dp"
+                         android:layout_centerVertical="true"
+                         android:layout_marginLeft="10dp"
+                         android:layout_alignParentLeft="true"
+                         />
+
+                     <pc.info.solution.washdude.UTILLS.customtext
+                         android:layout_width="wrap_content"
+                         android:textColor="#fff"
+                         android:text="OFFERS"
+                         android:textSize="16dp"
+                         android:layout_marginLeft="36dp"
+                         android:layout_height="wrap_content"
+                         android:layout_centerVertical="true"
+                         android:layout_toRightOf="@+id/img3"
+                         />
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+
+                         android:layout_marginRight="5dp"
+                         android:layout_centerVertical="true"
+                         android:layout_alignParentRight="true"
+                         android:layout_alignParentEnd="true" />
+
+
+                 </RelativeLayout>-->
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

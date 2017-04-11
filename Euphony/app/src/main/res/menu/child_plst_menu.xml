@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/play__id"
+        android:title="Play" />
+    <item
+        android:id="@+id/fav_id"
+        android:title="Add to favorites"></item>
+    <item
+        android:id="@+id/edit_id"
+        android:title="Edit info" />
+    <item
+        android:id="@+id/shr_id"
+        android:title="Share" />
+    <item
+        android:id="@+id/dlt_plst_id"
+        android:title="Remove" />
+</menu>

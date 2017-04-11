@@ -1,0 +1,83 @@
+<RelativeLayout android:background="@color/colorPrimary"
+    android:clickable="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="music.abitri.com.euphony.SecondaryFragmentPkg.ChildSecFragPkg.ChildDetilalAlbum"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/top_layout">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:elevation="1dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+
+        </android.support.v7.widget.Toolbar>
+        <music.abitri.com.euphony.CustomText.myTextcustomView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/artist_nm_id"
+            android:text="@string/app_name"
+            android:layout_marginRight="20dp"
+            android:ellipsize="marquee"
+            android:layout_marginTop="?actionBarSize"
+            android:focusable="true"
+            android:elevation="1dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:textSize="22dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"/>
+
+        <com.intrusoft.library.FrissonView
+            android:id="@+id/artist_art_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:alphaValue="65"
+            app:tintColor="@color/green"
+            app:tideCount="3"
+            android:rotation="0"
+            app:autoTint="true"
+            app:scaleType="centerCrop"
+            app:gradientAngle="100"
+            app:gradientType="linear"
+            app:tideHeight="50dp"
+            ></com.intrusoft.library.FrissonView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:id="@+id/child_arts_view"
+            android:layout_marginBottom="52dp"
+            android:elevation="1dp"></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

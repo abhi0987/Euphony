@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Euphony</string>
+    <string name="action_settings">Settings</string>
+    <string name="company_name">ABITRI &#8482;</string>
+    <string name="title_activity_basemusic">BasemusicActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_play">PlayActivity</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_song_picker">Euphony</string>
+    <string name="title_activity_play_list">Euphony</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_play_list_chooser">PlayListChooserActivity</string>
+    <string name="title_activity_queue">QueueActivity</string>
+</resources>

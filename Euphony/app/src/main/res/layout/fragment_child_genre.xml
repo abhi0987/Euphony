@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    tools:context="music.abitri.com.euphony.SecondaryFragmentPkg.ChildSecFragPkg.ChildDetilalAlbum">
+
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@android:color/transparent"
+            android:elevation="1dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <music.abitri.com.euphony.CustomText.myTextcustomView
+            android:id="@+id/gen_nm_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="?actionBarSize"
+            android:elevation="1dp"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="22dp" />
+
+        <com.intrusoft.library.FrissonView
+            android:id="@+id/artist_gen_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rotation="0"
+            app:alphaValue="65"
+            app:autoTint="true"
+            app:gradientAngle="100"
+            app:gradientType="linear"
+            app:scaleType="centerCrop"
+            app:tideCount="3"
+            app:tideHeight="50dp"
+            app:tintColor="@color/green"></com.intrusoft.library.FrissonView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_layout">
+
+        <music.abitri.com.euphony.CustomText.myTextcustomView
+            android:layout_width="wrap_content"
+            android:id="@+id/warn_id"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Oops! tracks not found"
+            android:textColor="#fff"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/child_gen_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="52dp"
+            android:layout_marginTop="15dp"
+            android:elevation="1dp"></android.support.v7.widget.RecyclerView>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

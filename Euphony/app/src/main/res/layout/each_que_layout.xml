@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:id="@+id/laayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/ic_library_music_grey_300_48dp" />
+
+        <ImageView
+            android:id="@+id/q_pic"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:padding="4dp" />
+
+        <LinearLayout
+            android:id="@+id/click_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:background="?attr/selectableItemBackground"
+            android:layout_toRightOf="@+id/q_pic"
+            android:orientation="vertical">
+
+            <music.abitri.com.euphony.CustomText.myTextcustomView
+                android:id="@+id/q_song"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="song name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15dp" />
+
+            <music.abitri.com.euphony.CustomText.myTextcustomView
+                android:id="@+id/q_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                android:singleLine="true"
+                android:text="artist name"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:id="@+id/more_lay"
+            android:layout_alignParentRight="true">
+
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="17dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/more_dots"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

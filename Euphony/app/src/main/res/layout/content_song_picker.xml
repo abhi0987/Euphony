@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_song_picker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="music.abitri.com.euphony.SongPickerActivity"
+    tools:showIn="@layout/activity_song_picker"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_centerInParent="true"
+            android:background="#363d37">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <music.abitri.com.euphony.CustomText.myTextcustomView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text=""
+                    android:lines="1"
+                    android:textSize="17dp"
+                    android:textColor="#fff"
+                    android:id="@+id/sng_nm_id"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="70dp"/>
+                <music.abitri.com.euphony.CustomText.myTextcustomView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/artst_nm_id"
+                    android:text=""
+                    android:lines="1"
+                    android:layout_marginRight="70dp"
+                    android:layout_below="@+id/sng_nm_id"
+                    android:layout_marginTop="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentRight="true">
+                    <android.support.design.widget.FloatingActionButton
+                        android:id="@+id/play_btn_pick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        app:backgroundTint="@color/orange"
+                        app:elevation="10dp"
+                        app:fabSize="normal"
+                        app:srcCompat="@drawable/play_button" />
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <app.minimize.com.seek_bar_compat.SeekBarCompat
+                    android:id="@+id/seekbar_pick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerInParent="true"
+                    app:progressBackgroundColor="#e19077"
+                    app:progressColor="@color/orange"
+                    app:thumbAlpha="1.0"
+                    app:thumbColor="@color/orange" />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

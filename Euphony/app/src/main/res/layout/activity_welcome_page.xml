@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="music.abitri.com.euphony.WelcomePage">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+
+        <com.intrusoft.library.FrissonView
+            android:id="@+id/wav_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:alphaValue="45"
+            app:tintColor="#8A2BE2"
+            app:tideCount="3"
+            app:autoTint="true"
+            app:scaleType="centerCrop"
+            app:gradientAngle="100"
+            app:gradientType="linear"
+            app:tideHeight="60dp"
+            app:src="@drawable/euphony_splash"
+            android:layout_marginBottom="70dp"></com.intrusoft.library.FrissonView>
+
+        <music.abitri.com.euphony.CustomText.custom_text_view
+            android:text="@string/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/wav_view"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="27dp"
+            android:textColor="#fff"
+            android:textSize="40dp"
+            android:layout_marginStart="27dp"
+            android:layout_marginBottom="164dp"
+            android:id="@+id/textView" />
+
+
+        <music.abitri.com.euphony.CustomText.myTextcustomView
+            android:text="Music is the movement of sound to reach the soul for the education of its virtue"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:layout_marginTop="40dp"
+            android:id="@+id/sub_text" />
+
+        <TextView
+            android:text="@string/company_name"
+            android:textColor="#fff"
+            android:fontFamily="monospace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="13dp"
+            android:id="@+id/textView3" />
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
